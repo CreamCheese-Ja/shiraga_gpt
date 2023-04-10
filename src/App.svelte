@@ -107,7 +107,7 @@ const send = async () => {
     description: 'shiragaGPTがなんでも答えてくれる',
     images: [
       {
-        url: 'https://shiraga-gpt.vercel.app/src/assets/shiraga_gpt.png',
+        url: '/src/assets/shiraga_gpt.png',
         width: 1456,
         height: 816,
         alt: 'shiragaGPT image'
