@@ -1,7 +1,6 @@
 <script lang="ts">
   import gptVideo from './assets/shiraga_gpt_3.mp4'
   import IconButton from '@smui/icon-button';
-  import { MetaTags } from 'svelte-meta-tags';
   import axios from 'axios';
 
 let video: HTMLVideoElement
@@ -95,26 +94,6 @@ const send = async () => {
 }
 
 </script>
-
-<MetaTags
-  title="shiragaGPT"
-  description="shiragaGPTがなんでも答えてくれる"
-  canonical="https://shiraga-gpt.vercel.app/"
-  openGraph={{
-    type: 'website',
-    url: 'https://shiraga-gpt.vercel.app/',
-    title: 'shiragaGPT',
-    description: 'shiragaGPTがなんでも答えてくれる',
-    images: [
-      {
-        url: './assets/shiraga_gpt.png',
-        width: 1456,
-        height: 816,
-        alt: 'shiragaGPT image'
-      }
-    ]
-  }}
-/>
 
 <main>
   <div hidden={!isLoading}>
